@@ -10,9 +10,9 @@ const Author=BlogDB.define("author",{
     firstName:Sequelize.STRING,
     lastName:Sequelize.STRING,
     email:Sequelize.STRING,
+});
     
 
-});
 //const authorSync=(object={})=>{
 const authorSync=({force=false}={force:false})=>{ 
     //force is a property of the sync function--when force is true it deletes the contents of the table and inserts fresh insert

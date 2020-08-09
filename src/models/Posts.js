@@ -20,6 +20,10 @@ const Post=BlogDB.define("post",{
     }
 });
 
+
+
+
+
 const postSync=({force=false,author={}}={force:false})=>{
     Post.sync({force})
         .then(()=>{

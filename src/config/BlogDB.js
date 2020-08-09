@@ -6,7 +6,7 @@ const BlogDB=new Sequelize(process.env.DB_URI);
 BlogDB
 .authenticate()
 .then(()=>{
-    console.log("DB Connection Establised");
+    console.log("DB Connection Established");
 })
 .catch((err)=>{
     console.error("Failed to establish DB connection")

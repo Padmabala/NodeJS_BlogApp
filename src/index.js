@@ -11,7 +11,7 @@ const app=express();
 const hbs=expressHbs.create({
   extname:'.hbs',
   layoutsDir:path.join(__dirname,"./views/layouts"),
-  partials:path.join(__dirname,"./views/partials")
+  partialsDir:path.join(__dirname,"./views/partials")
 });
 
 app.engine(".hbs",hbs.engine);
